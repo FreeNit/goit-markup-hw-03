@@ -251,7 +251,7 @@ a {
   /* color: #ffffff; */
 }
 
-.our-address {
+.page-footer .contact-us {
   font-style: normal;
 }
 
@@ -275,6 +275,10 @@ a {
 }
 
 /* OUR WORKS */
+.projects {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .our-projects .project-title {
   font-weight: 700;
