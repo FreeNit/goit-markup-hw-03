@@ -42,6 +42,17 @@ body {
   letter-spacing: 0.03em;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -108,7 +119,7 @@ a {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--secondary-text-color);
 
   margin: 0;
 }
@@ -184,12 +195,32 @@ a {
 .our-advantages {
   margin-bottom: 118px;
 }
+
+.our-advantages .title,
+.our-team .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.our-advantages .adv-description,
+.our-team .position {
+  margin: 0;
+}
+
 /* OUR OCCUPATION */
 .our-occupation {
   margin-bottom: 94px;
 }
 /* OUR TEAM */
 .our-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .our-team .team-card {
@@ -204,9 +235,19 @@ a {
   text-align: center;
 }
 
+.team-card .team-img {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
 /* FOOTER */
 
-.main-footer .logo-part-2 {
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.page-footer .logo-part-2 {
   /* color: #ffffff; */
 }
 
