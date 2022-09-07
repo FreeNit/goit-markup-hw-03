@@ -21,6 +21,17 @@
 /*
 *** GENERAL ***
 */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   color: var(--primary-text-color);
   background-color: var(--main-background-color);
@@ -31,7 +42,15 @@ body {
   letter-spacing: 0.03em;
 }
 
-h2, 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
+}
+
+h2,
 h3 {
   color: var(--secondary-text-color)
 }
@@ -66,6 +85,8 @@ a {
 }
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -75,10 +96,22 @@ a {
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
+  text-decoration: none;
   letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: none;
 }
 
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
 
+  margin: 0;
+}
 
 /*
 *** COMPONENTS ***
@@ -114,33 +147,49 @@ a {
 }
 
 /* HERO */
+
+.hero {
+  text-align: center;
+  margin-bottom: 94px;
+}
+
 .hero .hero-title {
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   /* color: #FFFFFF; */
+  margin: 0;
+  margin-bottom: 30px;
+  ;
+}
+
+.hero .btn.make-order {
+  padding: 10px 32px;
 }
 
 .hero .btn.make-order {
   color: #ffffff;
   background-color: var(--button-background-color);
 }
+
 .hero .btn.make-order:hover,
 .hero .btn.make-order:focus {
   background-color: var(--button-hover-focus-background-color);
 }
 
 /* OUR ADVANTAGES */
-
+.our-advantages {
+  margin-bottom: 118px;
+}
 /* OUR OCCUPATION */
-
+.our-occupation {
+  margin-bottom: 94px;
+}
 /* OUR TEAM */
 .our-team {
-  background-color: var(--secondary-background-color);
 }
 
 .our-team .team-card {
@@ -151,7 +200,7 @@ a {
 .team-card .title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18; 
+  line-height: 1.18;
   text-align: center;
 }
 
@@ -190,7 +239,7 @@ a {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em; 
+  letter-spacing: 0.06em;
 }
 
 .our-projects .project-type {
