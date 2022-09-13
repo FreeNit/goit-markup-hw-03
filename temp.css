@@ -1,0 +1,273 @@
+/* COLOR VARIABLES */
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+
+  --main-background-color: #FFFFFF;
+  --secondary-background-color: #F5F4FA;
+  --contrast-background-color: #2F303A;
+
+  --logo-main-color: #2196F3;
+
+  --link-hover-focus-color: #2196F3;
+
+  --button-background-color: #2196F3;
+  --button-hover-focus-background-color: #188CE8;
+
+  /* PORTFOLIO PAGE VARIABLES */
+
+  --portfolio-btn-bg-color: #F5F4FA;
+  --portfolio-btn-hover-bg-color: #2196F3;
+}
+
+/*
+*** GENERAL ***
+*/
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
+}
+
+h2,
+h3 {
+  color: var(--secondary-text-color)
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.logo-main {
+  color: var(--logo-main-color)
+}
+
+a {
+  text-decoration: none;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.btn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: none;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+
+  margin: 0;
+}
+
+/*
+*** COMPONENTS ***
+*/
+
+/* HEADER */
+
+.main-navigation .logo-part-2 {
+  color: #000000;
+}
+
+.main-navigation .link,
+.contact-us .contact-info {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.main-navigation .link {
+  color: #212121;
+}
+
+.contact-us .mail,
+.contact-us .phone {
+  color: #757575
+}
+
+.main-navigation .link:hover,
+.main-navigation .link:focus,
+.contact-us .contact-info:hover,
+.contact-us .contact-info:focus {
+  color: var(--link-hover-focus-color)
+}
+
+/* HERO */
+
+.hero {
+  text-align: center;
+  margin-bottom: 94px;
+}
+
+.hero .hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  /* color: #FFFFFF; */
+  margin: 0;
+  margin-bottom: 30px;
+  ;
+}
+
+.hero .btn.make-order {
+  padding: 10px 32px;
+}
+
+.hero .btn.make-order {
+  color: #ffffff;
+  background-color: var(--button-background-color);
+}
+
+.hero .btn.make-order:hover,
+.hero .btn.make-order:focus {
+  background-color: var(--button-hover-focus-background-color);
+}
+
+/* OUR ADVANTAGES */
+.our-advantages {
+  margin-bottom: 118px;
+}
+
+.our-advantages .title,
+.our-team .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.our-advantages .adv-description,
+.our-team .position {
+  margin: 0;
+}
+
+/* OUR OCCUPATION */
+.our-occupation {
+  margin-bottom: 94px;
+}
+/* OUR TEAM */
+.our-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.our-team .team-card {
+  background-color: var(--main-background-color);
+  text-align: center;
+}
+
+.team-card .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.team-card .team-img {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+/* FOOTER */
+
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.page-footer .contact-us {
+  font-style: normal;
+}
+
+.our-address .our-location {
+  /* color: #ffffff; */
+}
+
+/* 
+**** PORTFOLIO PAGE ***
+*/
+
+/* FILTER SECTION */
+.filter .btn {
+  background-color: var(--portfolio-btn-bg-color);
+}
+
+.filter .btn:hover,
+.filter .btn:focus {
+  background-color: var(--portfolio-btn-hover-bg-color);
+  color: #FFFFFF;
+}
+
+/* OUR WORKS */
+.projects {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.our-projects .project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.our-projects .project-type {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primary-text-color);
+}
