@@ -140,11 +140,6 @@ a {
   border-bottom: 1px solid #ECECEC;
 }
 
-.header-wrapper {
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
 .logo-part {
   color: var(--logo-secondary-color);
 }
@@ -172,35 +167,27 @@ a {
   align-items: center;
 }
 
+.header-wrapper .link {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .page-header .logo {
   margin-right: 93px;
 }
 
-.main-navigation{
-  margin-right: auto;
-}
-
 .site-nav {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: -50px;
-}
-
-.site-nav .link {
-  flex-basis: calc(100% / 3 - 50px);
-  margin-left: 50px;
+  column-gap: 50px;
 }
 
 .header-contact-us {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: -50px;
+  column-gap: 50px;
+  margin-left: auto;
 }
 
-.header-contact-us .link {
-  flex-basis: calc(100% / 2 - 50px);
-  margin-left: 50px;
-}
 
 
 /* .link:hover,
